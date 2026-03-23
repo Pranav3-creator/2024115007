@@ -14,4 +14,6 @@ class Inventory:
                 c["damaged"] = True
 
     def update_cash(self, amount):
+        if self.cash + amount < 0:
+            raise ValueError("Insufficient inventory balance")
         self.cash += amount
