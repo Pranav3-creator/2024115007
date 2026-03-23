@@ -20,6 +20,8 @@ class Game:
     """Manages the full state and flow of a MoneyPoly game session."""
 
     def __init__(self, player_names):
+        if len(player_names) < 2:
+            raise ValueError("At least 2 players required")
         self.board = Board()
         self.bank = Bank()
         self.dice = Dice()
@@ -359,7 +361,7 @@ class Game:
         """Return the player with the highest net worth."""
         if not self.players:
             return None
-        return min(self.players, key=lambda p: p.net_worth())
+        return max(self.players, key=lambda p: p.net_worth())
 
     def run(self):
         """Run the game loop until only one player remains or turns run out."""

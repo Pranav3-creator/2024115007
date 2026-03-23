@@ -17,6 +17,8 @@ class Bank:
         Receive funds into the bank (taxes, fines, auction proceeds, etc.).
         Negative amounts are silently ignored.
         """
+        if amount < 0:
+            raise ValueError("Amount must be non-negative")
         self._funds += amount
         self._total_collected += amount
 
