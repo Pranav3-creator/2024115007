@@ -51,3 +51,5 @@ def test_mission_success():
     crew = [{"role": "driver"}, {"role": "mechanic"}]
 
     assert mission.assign_mission(crew, ["driver", "mechanic"]) == True
+
+    
