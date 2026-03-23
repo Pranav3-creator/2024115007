@@ -24,11 +24,12 @@ class Player:
 
     def deduct_money(self, amount):
         """Deduct funds from this player's balance. Amount must be non-negative."""
-        if amount < 0:
+        if amount <= 0:
             raise ValueError(f"Cannot deduct a negative amount: {amount}")
         if amount > self.balance:
             raise ValueError("Insufficient balance")
         self.balance -= amount
+
     def is_bankrupt(self):
         """Return True if this player has no money remaining."""
         return self.balance <= 0
