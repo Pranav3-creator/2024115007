@@ -1,5 +1,5 @@
 """Bank module for managing funds and transactions."""
-from moneypoly.config import BANK_STARTING_FUNDS
+from config import BANK_STARTING_FUNDS
 
 
 class Bank:

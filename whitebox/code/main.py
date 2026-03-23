@@ -1,5 +1,5 @@
 """Main entry point for running the MoneyPoly game."""
-from moneypoly.game import Game
+from game import Game
 
 
 def get_player_names():

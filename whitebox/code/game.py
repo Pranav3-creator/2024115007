@@ -1,5 +1,5 @@
 """Game module controlling overall gameplay flow and game state."""
-from moneypoly.config import (
+from config import (
     GO_TO_JAIL_POSITION,
     JAIL_FINE,
     AUCTION_MIN_INCREMENT,
@@ -8,12 +8,12 @@ from moneypoly.config import (
     MAX_TURNS,
     GO_SALARY,
 )
-from moneypoly.player import Player
-from moneypoly.board import Board
-from moneypoly.bank import Bank
-from moneypoly.dice import Dice
-from moneypoly.cards import CardDeck, CHANCE_CARDS, COMMUNITY_CHEST_CARDS
-from moneypoly import ui
+from player import Player
+from board import Board
+from bank import Bank
+from dice import Dice
+from cards import CardDeck, CHANCE_CARDS, COMMUNITY_CHEST_CARDS
+import ui
 
 
 class Game:
