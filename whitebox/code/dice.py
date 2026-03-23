@@ -5,6 +5,7 @@ from config import BOARD_SIZE
 class Dice:
     """Simulates a pair of six-sided dice with consecutive-doubles tracking."""
 
+
     def __init__(self):
         self.die1 = 0
         self.die2 = 0
