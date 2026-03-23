@@ -1,4 +1,4 @@
-import sys
+"""Player module representing players and their actions in the game."""
 from moneypoly.config import STARTING_BALANCE, BOARD_SIZE, GO_SALARY, JAIL_POSITION
 
 

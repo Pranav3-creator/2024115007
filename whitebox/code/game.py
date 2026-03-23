@@ -1,5 +1,4 @@
-import os
-
+"""Game module controlling overall gameplay flow and game state."""
 from moneypoly.config import (
     GO_TO_JAIL_POSITION,
     JAIL_FINE,

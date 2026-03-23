@@ -1,3 +1,4 @@
+"""Board module defining the game board, tiles, and property locations."""
 from moneypoly.property import Property, PropertyGroup
 from moneypoly.config import (
     JAIL_POSITION,
@@ -105,7 +106,7 @@ class Board:
         prop = self.get_property_at(position)
         if prop is None:
             return False
-        if prop.is_mortgaged == True:
+        if prop.is_mortgaged:
             return False
         return prop.owner is None
 
