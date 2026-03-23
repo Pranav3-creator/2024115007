@@ -22,6 +22,7 @@ class Game:
     def __init__(self, player_names):
         if len(player_names) < 2:
             raise ValueError("At least 2 players required")
+
         self.board = Board()
         self.bank = Bank()
         self.dice = Dice()
@@ -215,6 +216,7 @@ class Game:
             f"to {buyer.name} for ${cash_amount}."
         )
         return True
+
 
     def auction_property(self, prop):
         """Run an open auction for `prop` among all active players."""
